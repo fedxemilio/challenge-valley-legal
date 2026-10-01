@@ -32,8 +32,18 @@
   main {
     max-width: 720px;
     margin: 0 auto;
-    padding: 48px 20px 80px;
+    padding: 32px 20px 80px;
   }
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+  }
+  .site-nav a { color: var(--muted); text-decoration: none; }
+  .site-nav a:hover { color: var(--accent); }
+  .site-nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
   h1 {
     font-size: 1.75rem;
     margin-bottom: 4px;
@@ -87,6 +97,12 @@
 </head>
 <body>
 <main>
+  <nav class="site-nav" aria-label="Challenge Valley pages">
+    <a href="./" aria-current="page">Privacy Policy</a>
+    <a href="support.html">Support</a>
+    <a href="community-guidelines.html">Community Guidelines</a>
+  </nav>
+
   <h1>Challenge Valley Privacy Policy</h1>
   <p class="effective-date">Effective date: September 30, 2026</p>
 
@@ -228,7 +244,7 @@
   <p>Questions about this policy or your data: <a href="mailto:fedxemilio@gmail.com">fedxemilio@gmail.com</a></p>
 
   <footer>
-    &copy; 2026 Challenge Valley
+    &copy; 2026 Challenge Valley &middot; <a href="support.html">Support</a> &middot; <a href="community-guidelines.html">Community Guidelines</a>
   </footer>
 </main>
 </body>
